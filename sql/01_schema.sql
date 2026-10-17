@@ -1,0 +1,1 @@
+-- Define the source and analysis table schemas here.
