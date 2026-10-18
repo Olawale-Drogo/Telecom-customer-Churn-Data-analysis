@@ -1,28 +1,44 @@
 # Telecom Customer Churn Analysis
 
-A data analysis project focused on understanding why telecom customers leave and which factors are most strongly associated with churn.
+A data analysis project focused on understanding why telecom customers leave and which factors are most strongly associated with churn, using the Iranian Churn dataset published by the UCI Machine Learning Repository.
 
 ## Overview
 
-This project analyzes customer behavior, service usage, billing patterns, and contract characteristics to uncover churn drivers and support retention strategies. The workflow combines SQL-based exploration with Python-based data cleaning and analysis.
+This project analyzes customer behavior, service usage, complaints, subscription length, and customer value to uncover churn patterns and support retention analysis. The workflow combines SQL-based exploration with Python-based data cleaning and analysis.
 
 ## Business Problem
 
-Customer churn directly affects recurring revenue, customer lifetime value, and operational efficiency in telecom businesses. The goal of this analysis is to identify the customer, service, and commercial factors associated with attrition and highlight areas where retention efforts are most likely to have an impact.
+Customer churn can affect recurring revenue, customer lifetime value, and operational efficiency in telecom businesses. The goal of this analysis is to identify the customer and service factors associated with attrition and highlight areas for further retention analysis.
+
+## Dataset and Source
+
+This project uses the **Iranian Churn** dataset from the [UCI Machine Learning Repository]
+(https://archive.ics.uci.edu/dataset/563/iranian+churn+dataset).
+
+- **Publisher:** UCI Machine Learning Repository
+- **Dataset:** Iranian Churn
+- **DOI:** [10.24432/C5JW3Z](https://doi.org/10.24432/C5JW3Z)
+- **License:** [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
+- **Size:** 3,150 customer records
+
+The data was collected from an Iranian telecommunications company. The documented features represent the first nine months, while the churn status is recorded at the end of 12 months, providing a three-month interval between the feature period and the outcome.
+
+The dataset documents fields such as call failures, complaints, subscription length, charges, usage, SMS frequency, distinct called numbers, tariff plan, customer status, age, customer value, and churn. Analyses and derived materials in this repository will retain attribution to the UCI Machine Learning Repository and the dataset's CC BY 4.0 license.
 
 ## Key Questions
 
-1. What is the overall churn rate?
-2. Which customer segments have the highest churn risk?
-3. How does tenure influence churn behavior?
-4. Which services or product bundles are associated with higher churn?
-5. How do contract terms and payment methods vary by churn status?
-6. What is the revenue exposure associated with churned customers?
-7. Which customer groups should be prioritized for retention analysis?
+1. What percentage of customers churned?
+2. How does churn differ between customers with and without complaints?
+3. How does subscription length relate to churn?
+4. How does churn vary with usage, call failures, SMS frequency, and distinct called numbers?
+5. How does customer value differ between churned and retained customers?
+6. How does churn vary across tariff plans and customer status?
+7. Which customer groups should be prioritized for further retention analysis?
 
 ## Tools and Technologies
 
 - PostgreSQL
+- DBeaver
 - SQL
 - Python
 - Pandas
@@ -30,6 +46,7 @@ Customer churn directly affects recurring revenue, customer lifetime value, and 
 - Matplotlib
 - Seaborn
 - Jupyter Notebook
+- Power BI
 - Git and GitHub
 
 ## Repository Structure
