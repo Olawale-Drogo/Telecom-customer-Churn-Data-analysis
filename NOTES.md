@@ -136,3 +136,30 @@ Next we download the original UCI CSV, place it correctly in the GitHub project,
 Provide your feedback on BizChat
 Sources
 AllPeoplePeopleFilesFilesMeetingsMeetingsEmailsEmailsChatsChatsChannelsChannelsSitesSitesPower BIPower BIOtherOther+2
+
+
+===============================================
+--
+This is actually a useful interview example
+
+You can eventually explain:
+
+"During ingestion I identified an inconsistent source-column header containing whitespace. Rather than altering the raw source layer, I preserved the imported dataset and standardized the field naming in a separate analytics schema."
+
+That shows the interviewer you're not just writing SELECT statements. You understand raw data → transformation → analysis-ready data.
+
+UCI CSV
+   ↓
+raw.customer_churn
+   │
+   │ Preserve source
+   ↓
+Transformation
+   ↓
+analytics.customer_churn
+   │
+   ├── clean column names
+   ├── validation
+   └── analysis-ready structure
+   ↓
+SQL analysis
