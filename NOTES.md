@@ -163,3 +163,33 @@ analytics.customer_churn
    └── analysis-ready structure
    ↓
 SQL analysis
+
+=========================================================================================
+segment additional findings
+
+"Overall Interpretation
+Three broad patterns emerge from the segmentation analysis:
+
+1. Complaints provide substantial churn separation
+Customers with complaint history recorded substantially higher churn across both tariff plans and both customer-status groups.
+
+2. Customer inactivity remains important even without complaints
+Non-active customers without complaints recorded a churn rate of 36.70%, which was 20.98 percentage points above the overall baseline.
+
+This suggests that the absence of a complaint does not necessarily indicate a low-risk customer when activity has already declined.
+
+3. Customer value and churn move in opposite directions
+Observed churn declined consistently as customer value increased. However, customer value should be combined with churn risk and customer volume when prioritizing retention activity.
+
+Recommended Next Analytical Steps
+The Python exploratory analysis should now test and visualize:
+
+the distribution of customer value within churn groups;
+the distribution of usage measures rather than averages alone;
+correlations between customer value and usage variables;
+potential outliers in customer value and usage;
+the relationship between complaints, activity status, and engagement;
+churn patterns within the 0-12 and 25-36 month tenure segments;
+whether low customer value is largely explained by low usage;
+and whether the status field presents a target-leakage risk.
+These results provide a strong foundation for the Power BI dashboard, but the dashboard should focus on the most decision-relevant findings rather than displaying every query."
